@@ -1,8 +1,8 @@
-package lw2.prelab;
+package lw02.prelab;
 
 import java.util.*;
 
-public class Main2 {
+public class AnswerPrelab02 {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,7 @@ public class Main2 {
 
         // Read file
         Scanner scanner = new Scanner(
-            Main.class.getResourceAsStream("transactions.txt")
+            AnswerPrelab02.class.getResourceAsStream("transactions.txt")
         );
 
         while(scanner.hasNext()){

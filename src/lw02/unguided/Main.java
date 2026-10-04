@@ -14,12 +14,17 @@ public class Main {
         Queue<String[]> queue = new LinkedList<>();
         Stack<String[]> failedRequests = new Stack<>();
 
-        String[] stockKalkulus = { "Kalkulus", "2" };
-        String[] stockFisika = { "Fisika", "1" };
-        String[] stockStatistika = { "Statistika", "2" };
-        bookStocks.add(stockKalkulus);
-        bookStocks.add(stockFisika);
-        bookStocks.add(stockStatistika);
+        // String[] stockKalkulus = { "Kalkulus", "2" };
+        // String[] stockFisika = { "Fisika", "1" };
+        // String[] stockStatistika = { "Statistika", "2" };
+        // bookStocks.add(stockKalkulus);
+        // bookStocks.add(stockFisika);
+        // bookStocks.add(stockStatistika);
+
+        String[][] bookStockLists = { { "Kalkulus", "2" }, { "Fisika", "1" }, { "Statistika", "2" } };
+        for (String[] bookStock : bookStockLists) {
+            bookStocks.add(bookStock);
+        }
 
         while (sc.hasNext()) {
             String[] request = new String[2];
@@ -28,6 +33,8 @@ public class Main {
 
             requests.add(request);
         }
+
+        sc.close();
 
         queue.addAll(requests);
         int size = queue.size();
