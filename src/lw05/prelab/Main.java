@@ -99,8 +99,7 @@ public class Main {
         if (current == start) {
             System.out.print(names[current]);
         } else {
-            route(prev[current], start, prev);
-            ; // print the route up to the previous building
+            route(prev[current], start, prev); // print the route up to the previous building
             System.out.print(" -> " + names[current]);
         }
     }
